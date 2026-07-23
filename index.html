@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundry &mdash; Digital Craftsmanship Studio</title>
+  <meta name="description" content="Foundry is a digital craftsmanship studio building semantic, accessible, and fast interfaces for teams who care about the details.">
+
+  <!-- Fonts: Inter (headings) + Open Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Skip link for keyboard and screen reader users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Foundry home">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span class="brand-name">Foundry</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primaryNavList"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav-list" id="primaryNavList" data-state="closed">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button
+        class="theme-toggle"
+        id="themeToggle"
+        type="button"
+        aria-pressed="false"
+        aria-label="Switch to dark theme"
+      >
+        <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="4.5"></circle>
+          <path d="M12 2.5v2.5M12 19v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12H5M19 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"></path>
+        </svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="hero-inner">
+        <p class="eyebrow">Project 1 &middot; The Responsive Architecture</p>
+        <h1 id="hero-heading">
+          We draft interfaces the way engineers draft buildings:
+          <span class="accent">measured, load-bearing, built to last.</span>
+        </h1>
+        <p class="hero-lede">
+          Foundry is a small studio that builds semantic, accessible, and fast
+          front ends &mdash; no frameworks, no shortcuts. Just HTML, CSS, and
+          JavaScript, used the way they were meant to be used.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Start a project</a>
+          <a class="btn btn-ghost" href="#process">See how we work</a>
+        </div>
+      </div>
+      <div class="hero-blueprint" aria-hidden="true">
+        <div class="blueprint-frame">
+          <span class="dim dim-top">1080px</span>
+          <span class="dim dim-side">1920px</span>
+          <div class="blueprint-block block-header"></div>
+          <div class="blueprint-block block-nav"></div>
+          <div class="blueprint-block block-main"></div>
+          <div class="blueprint-block block-footer"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES / KEY REQUIREMENTS -->
+    <section class="services" id="services" aria-labelledby="services-heading">
+      <div class="section-inner">
+        <h2 id="services-heading">The raw materials</h2>
+        <p class="section-lede">Three layers, each doing exactly one job.</p>
+
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">&lt;/&gt;</div>
+            <h3>HTML5 &mdash; the infrastructure</h3>
+            <p>
+              Semantic landmarks and structural meaning. Not just divs, but
+              the right element for the right job, so screen readers and
+              search engines can navigate your page like a floor plan.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">&#9635;</div>
+            <h3>CSS3 &mdash; the skin</h3>
+            <p>
+              Responsive styling with Grid for macro layout and Flexbox for
+              micro components, styled from a disciplined, three-tone
+              palette and a two-family type system.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">&#9881;</div>
+            <h3>JavaScript &mdash; the logic</h3>
+            <p>
+              Lightweight state management: a menu that opens, a theme that
+              switches, a form that responds. Enough logic to feel alive,
+              never more than the page needs.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process" id="process" aria-labelledby="process-heading">
+      <div class="section-inner">
+        <h2 id="process-heading">The execution roadmap</h2>
+        <p class="section-lede">
+          Every build moves through the same six stages, in order &mdash;
+          because skipping one always shows up later.
+        </p>
+
+        <ol class="roadmap">
+          <li class="roadmap-step">
+            <span class="step-index" aria-hidden="true">01</span>
+            <h3>Discovery</h3>
+            <p>Define the brief and the single job the page has to do.</p>
+          </li>
+          <li class="roadmap-step">
+            <span class="step-index" aria-hidden="true">02</span>
+            <h3>Wireframe</h3>
+            <p>Grayscale, mobile-first. If it doesn't work without color, color won't fix it.</p>
+          </li>
+          <li class="roadmap-step">
+            <span class="step-index" aria-hidden="true">03</span>
+            <h3>Semantics</h3>
+            <p>Lay the HTML landmarks: header, nav, main, article, footer.</p>
+          </li>
+          <li class="roadmap-step">
+            <span class="step-index" aria-hidden="true">04</span>
+            <h3>Style</h3>
+            <p>CSS Grid and Flexbox, dressed in the studio's 2025 palette.</p>
+          </li>
+          <li class="roadmap-step">
+            <span class="step-index" aria-hidden="true">05</span>
+            <h3>Logic</h3>
+            <p>State and interactivity &mdash; menus, toggles, forms.</p>
+          </li>
+          <li class="roadmap-step">
+            <span class="step-index" aria-hidden="true">06</span>
+            <h3>Audit</h3>
+            <p>Performance and accessibility, checked before anything ships.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- WORK / SIGNATURE -->
+    <section class="showcase" id="work" aria-labelledby="showcase-heading">
+      <div class="section-inner showcase-inner">
+        <div class="showcase-copy">
+          <h2 id="showcase-heading">You are the architect</h2>
+          <p>
+            Your code determines who has access to information and how the
+            world experiences it. Every breakpoint is a decision about who
+            gets to use what you build, and on what device.
+          </p>
+          <blockquote class="pull-quote">
+            <p>&ldquo;If it doesn't work in grayscale, color won't fix it.&rdquo;</p>
+          </blockquote>
+        </div>
+        <div class="showcase-devices" aria-hidden="true">
+          <div class="device device-desktop">
+            <div class="device-bar"></div>
+            <div class="device-content"></div>
+          </div>
+          <div class="device device-tablet">
+            <div class="device-bar"></div>
+            <div class="device-content"></div>
+          </div>
+          <div class="device device-mobile">
+            <div class="device-bar"></div>
+            <div class="device-content"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="section-inner contact-inner">
+        <div class="contact-copy">
+          <h2 id="contact-heading">Start a project</h2>
+          <p>
+            Tell us what you're building. We reply within two working days,
+            with a plan &mdash; not a sales pitch.
+          </p>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required
+                   aria-describedby="name-error">
+            <span class="field-error" id="name-error" role="alert"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required
+                   aria-describedby="email-error">
+            <span class="field-error" id="email-error" role="alert"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="5" required
+                      aria-describedby="message-error"></textarea>
+            <span class="field-error" id="message-error" role="alert"></span>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Send message</button>
+
+          <p class="form-alert" id="formAlert" role="status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span>Foundry Studio</span>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="footer-meta">&copy; <span id="footerYear"></span> Foundry Studio. Built with vanilla HTML, CSS &amp; JS.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
